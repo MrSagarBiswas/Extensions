@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "MongoDB Formatter",
+  "version": "4.3",
+  "description": "MongoDB Formatter",
+  "permissions": [
+    "storage",
+    "scripting",
+    "webNavigation",
+    "tabs"
+  ],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  }
+}

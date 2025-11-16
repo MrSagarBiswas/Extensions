@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "OCaml Beautifier",
+  "version": "2.1",
+  "description": "OCaml Formatter",
+  "permissions": ["storage"],
+  "host_permissions": ["<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["injector.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["helper.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
