@@ -4,10 +4,10 @@ function interceptAndSpoof() {
     };
 
     const applySpoofs = (win) => {
-        if (win.__tabSwitchSpoofApplied) {
-            return;
-        }
-        Object.defineProperty(win, '__tabSwitchSpoofApplied', { value: true, configurable: false, enumerable: false });
+        // if (win.__tabSwitchSpoofApplied) {
+        //     return;
+        // }
+        // Object.defineProperty(win, '__tabSwitchSpoofApplied', { value: true, configurable: false, enumerable: false });
 
         const { document, EventTarget, Function, Object, Promise, navigator, MediaStreamTrack, screen } = win;
 
